@@ -25,11 +25,18 @@ main {
 li {
     padding: 10px 0;
 }
-img.logo {
+img#logo {
     width: 150px;
     display: block;
     margin: 30px auto;
 }
 .title {
     text-align: center;
+}
+.dark {
+    background-color: #333;
+    color: white;
+}
+.dark h2 {
+    color: #4F9ACF;
 }
