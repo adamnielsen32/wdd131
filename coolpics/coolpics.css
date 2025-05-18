@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+.hide {
+  display: none;
+}
+
+header {
+  background-color: #270a91ee;
+  padding: 20px;
+  text-align: center;
+  color: #fcfafa;
+  max-width: 100%;
+}
+
+h1, h2 {
+  font-family: 'Mooli', Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4em;
+  color: #fcfafa;
+}
+
+h2 {
+  font-size: 2em;
+  color: #111;
+}
+
+.gallery {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.menu-button {
+  font-size: 2em;
+  color: #fcfafa;
+  background-color: #270a91b0;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-bottom: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fcfafa;
+}
+
+footer {
+  background-color: #270a91b0;
+  padding: 20px;
+  color: #fcfafa;
+}
+
+dialog.modal-viewer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  padding: 0;
+  z-index: 10;
+  position: fixed;
+}
+
+.modal-viewer img {
+  width: 90%;
+  max-height: 100%;
+  display: block;
+  margin: 20vh auto;
+}
+.modal-img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.close-viewer {
+  position: absolute;
+  top: 20vh;
+  right: 5vw;
+  font-size: 1.5rem;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .menu {
+    display: flex !important;
+    justify-content: center;
+    gap: 20px;
+  }
+}
