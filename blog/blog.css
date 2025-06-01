@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 body {
-  font-family: helvectica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #fff;
@@ -71,10 +71,24 @@ article {
   grid-template-columns: 150px 1fr;
   gap: 1rem;
   margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
 }
 
 .details {
-  font-size: 1rem;
+  text-align: right;
+  font-size: .9rem;
+  line-height: 1.2;
+  border-right: 2px solid #ddd;
+  padding-right: 1rem;
+  margin-right: 1rem;
+}
+
+.details time {
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .article-content h2 {
@@ -84,7 +98,8 @@ article {
 .article-content img {
   max-width: 100%;
   height: auto;
-  margin: 0.5rem 0;
+  display: block;
+  margin: 0 auto 1rem;
 }
 
 .filters {
@@ -113,4 +128,10 @@ footer {
 
 .skiptocontent a:focus {
   top: 0;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
 }
