@@ -52,7 +52,7 @@
   margin: 20px 0;
 }
 .recipe-card {
-    display: block; /* default to block for small screens */
+    display: block; 
   border: 1px solid black;         
   border-radius: 10px;           
   padding: 16px;
@@ -110,7 +110,7 @@
   }
 
   .recipe-description {
-    display: block; /* ensures it's visible again if hidden for small screens */
+    display: block; 
   }
 }
 
